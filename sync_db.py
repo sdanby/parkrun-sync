@@ -2,11 +2,11 @@ import requests
 import sqlite3
 
 # Replace with your actual ngrok URL
-LOCAL_API_URL_EVENTS = 'http://your-ngrok-url/events'  # Update with your ngrok URL
-LOCAL_API_URL_POSITIONS = 'http://your-ngrok-url/eventpositions'  # Update with your ngrok URL
+LOCAL_API_URL_EVENTS = 'https://7ac4-2a02-c7c-a605-fe00-ccf-2c8-de43-fbf8.ngrok-free.app/events'  # Update with your ngrok URL
+LOCAL_API_URL_POSITIONS = 'https://7ac4-2a02-c7c-a605-fe00-ccf-2c8-de43-fbf8.ngrok-free.app/eventpositions'  # Update with your ngrok URL
 
 # Connect to Render's SQLite database
-render_db_conn = sqlite3.connect('/path/to/render/parkrun.db')  # Update with the actual path to the Render database
+render_db_conn = sqlite3.connect('C:/Users/stevi/flask-backend/myapp/parkrun.db')  # Update with the actual path to the Render database
 render_cursor = render_db_conn.cursor()
 
 # Fetch local events from the local API
